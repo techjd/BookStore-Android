@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BookStore" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/TextInputStyle</item>
+
+        <item name="colorSurface">#4C4C4D</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+
+        <!--        <item name="colorOnContainer">@color/white</item>-->
+<!--        <item name="colorContainer">@color/white</item>-->
+<!--        <item name="colorOnSurface">@color/black</item>-->
+    </style>
+
+    <style name="RelativeLayoutStyle" parent="@android:style/Widget">
+        <item name="android:background">@drawable/dark_background</item>
+    </style>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="boxBackgroundColor">#303030</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+    </style>
+
+    <style name="TextInputEditText" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#AFADAD</item>
+
+    </style>
+
+    <style name="textButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="toolbarText" parent="Widget.AppCompat.TextView">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">@style/Text</item>
+    </style>
+
+    <style name="Text" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+<!--                <item name="elevation">100dp</item>-->
+        <item name="backgroundTint">#4C4C4D</item>
+        <item name="itemRippleColor">#4C4C4D</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <!--        <item name="rippleColor">@color/white</item>-->
+        <!--        <item name="colorSurface">#DDF1F9</item>-->
+        <!--        <item name="backgroundTint">#DDF1F9</item>-->
+    </style>
+
+    <style name="AddToCartButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#ADB9F9</item>
+
+    </style>
+
+</resources>

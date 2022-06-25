@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/sort"
+            style="@style/textButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_bold"
+            android:gravity="center"
+            app:icon = "@drawable/ic_sort"
+            app:iconGravity = "textStart"
+            app:iconSize = "25dp"
+            android:layout_weight="1"
+            app:iconPadding = "10dp"
+            android:textSize="20dp"
+            android:text="Sort"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/filter"
+            style="@style/textButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_bold"
+            android:gravity="center"
+            app:icon = "@drawable/ic_filter"
+            app:iconSize = "25dp"
+            app:iconGravity = "textStart"
+            app:iconPadding = "10dp"
+            android:textSize="20dp"
+            android:text="Filter"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/booksRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_book"
+        />
+
+</LinearLayout>
