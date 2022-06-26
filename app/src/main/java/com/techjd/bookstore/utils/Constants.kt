@@ -6,4 +6,7 @@ object Constants {
     const val PRODUCTION_BASE_URL = "http://localhost:5000/api/"
     const val PREFS_TOKEN_FILE = "PREFS_TOKEN_FILE"
     const val USER_TOKEN = "USER_TOKEN"
+    const val REGISTER_ENDPOINT = "auth/register"
+    const val LOGIN_ENDPOINT = "auth/login"
+    const val GET_ALL_BOOKS_ENDPOINT = "buyer/books"
 }

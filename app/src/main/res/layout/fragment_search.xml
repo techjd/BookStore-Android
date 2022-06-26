@@ -5,12 +5,20 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragment.SearchFragment">
 
-    <TextView
-        android:layout_centerInParent="true"
-        android:text="Search Fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:fontFamily="@font/montserrat_bold"
+    <include
+        android:id="@+id/main_top_app_bar_search"
+        layout="@layout/app_bar_search"
+        />
+
+    <EditText
+        android:layout_below="@id/main_top_app_bar_search"
+        style="@style/SearchView"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Type Anything To Search"
+        android:padding="10dp"
+        tools:visibility="visible"
+        android:fontFamily="@font/montserrat_medium"
         />
 </RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="10dp"
+        android:text="Sort By"
+        android:textSize="25dp" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/aToZ"
+        style="@style/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:text="Sort - A to Z"
+        android:textSize="20dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/zToa"
+        style="@style/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:text="Sort - Z to A"
+        android:textSize="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/lowToHight"
+        style="@style/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        app:icon="@drawable/ic_low_to_hight"
+        app:iconPadding="10dp"
+        app:iconSize="30dp"
+        app:iconGravity="textEnd"
+        android:text="Price - Low To High"
+        android:textSize="20dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/highToLow"
+        style="@style/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        app:icon="@drawable/ic_high_to_low"
+        app:iconPadding="10dp"
+        app:iconSize="30dp"
+        app:iconGravity="textEnd"
+        android:text="Price - High To Low"
+        android:textSize="20dp" />
+
+</LinearLayout>

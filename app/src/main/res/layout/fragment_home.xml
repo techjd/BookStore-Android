@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
 
     tools:context=".ui.fragment.HomeFragment">
 
@@ -13,18 +12,19 @@
         layout="@layout/app_bar" />
 
     <LinearLayout
-
+        android:id="@+id/sortAndFilter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_below="@id/main_top_app_bar"
+        android:orientation="vertical">
 
 
         <Button
+            android:layout_gravity="right"
             android:id="@+id/sort"
             style="@style/textButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:fontFamily="@font/nunitosans_bold"
             android:gravity="center"
             android:text="Sort"
@@ -32,22 +32,10 @@
             app:icon="@drawable/ic_sort"
             app:iconGravity="textStart"
             app:iconPadding="10dp"
+            android:layout_marginRight="10dp"
             app:iconSize="25dp" />
 
-        <Button
-            android:id="@+id/filter"
-            style="@style/textButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/nunitosans_bold"
-            android:gravity="center"
-            android:text="Filter"
-            android:textSize="20dp"
-            app:icon="@drawable/ic_filter"
-            app:iconGravity="textStart"
-            app:iconPadding="10dp"
-            app:iconSize="25dp" />
+
 
     </LinearLayout>
 
@@ -55,6 +43,15 @@
         android:id="@+id/booksRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/sortAndFilter"
         tools:listitem="@layout/item_book" />
 
-</LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

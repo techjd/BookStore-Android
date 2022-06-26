@@ -3,7 +3,7 @@
     <style name="Theme.BookStore" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">#4C4C4D</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -80,6 +80,15 @@
     <style name="AddToCartButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">#ADB9F9</item>
 
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/editext_background_dark</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="bottomSheet" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

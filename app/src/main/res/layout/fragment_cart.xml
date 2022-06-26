@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragment.CartFragment">
 
+    <include
+        android:id="@+id/main_top_app_bar_cart"
+        layout="@layout/app_bar_cart" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_top_app_bar_cart"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Total Amount :"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="₹ 1000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_margin="10dp"
         android:fontFamily="@font/montserrat_bold"
-        android:text="Cart Fragment"
-        android:textSize="40dp" />
+        android:gravity="center"
+        android:text="No Items in Cart ☹️"
+        android:textSize="35dp" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addToCart"
+        style="@style/AddToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="CHECKOUT"
+        android:textSize="20dp"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_checkout"
+        app:iconGravity="textStart"
+        app:iconSize="20dp" />
 </RelativeLayout>

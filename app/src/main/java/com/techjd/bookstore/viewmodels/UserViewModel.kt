@@ -12,6 +12,7 @@ import com.techjd.bookstore.models.login.response.UserResponseLogin
 import com.techjd.bookstore.models.register.request.UserRequestRegister
 import com.techjd.bookstore.models.register.response.UserResponseRegister
 import com.techjd.bookstore.repository.UserRepository
+import com.techjd.bookstore.utils.ErrorResponse
 import com.techjd.bookstore.utils.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -21,7 +22,7 @@ import javax.inject.Inject
 @HiltViewModel
 class UserViewModel @Inject constructor(
     private val userRepository: UserRepository,
-    private val gson: Gson
+    private val errorResponse: ErrorResponse
 ) : ViewModel() {
 
     private val _userRegisterResponse: MutableLiveData<NetworkResult<UserResponseRegister>> =
@@ -38,9 +39,8 @@ class UserViewModel @Inject constructor(
         if (data.isSuccessful) {
             _userRegisterResponse.postValue(NetworkResult.Success(data.body()!!))
         } else {
-            val errorObject = JSONObject(data.errorBody()?.charStream()?.readText()!!)
-            val error = gson.fromJson(errorObject.toString(), Failure::class.java)
-            _userLoginResponse.postValue(NetworkResult.Error(error.message))
+            val error = errorResponse.giveErrorResult(data.errorBody()!!)
+            _userRegisterResponse.postValue(NetworkResult.Error(error.message))
         }
     }
 
@@ -50,8 +50,7 @@ class UserViewModel @Inject constructor(
         if (data.isSuccessful) {
             _userLoginResponse.postValue(NetworkResult.Success(data.body()!!))
         } else {
-            val errorObject = JSONObject(data.errorBody()?.charStream()?.readText()!!)
-            val error = gson.fromJson(errorObject.toString(), Failure::class.java)
+            val error = errorResponse.giveErrorResult(data.errorBody()!!)
             _userLoginResponse.postValue(NetworkResult.Error(error.message))
         }
     }

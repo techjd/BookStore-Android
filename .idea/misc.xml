@@ -6,14 +6,20 @@
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/drawable/background.xml" value="0.1925" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/drawable/border.xml" value="0.206" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/drawable/dark_background.xml" value="0.1925" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/drawable/editext_background_dark.xml" value="0.2065" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/drawable/edittext_background.xml" value="0.1845" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/drawable/edittext_background_light.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/alert_dialog.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar.xml" value="0.264" />
-        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_cart.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_cart.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_profile.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_search.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/filter_bottom_sheet.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_cart.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_profile.xml" value="0.22083333333333333" />
-        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_search.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_search.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_sign_up.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_splash.xml" value="0.22083333333333333" />
