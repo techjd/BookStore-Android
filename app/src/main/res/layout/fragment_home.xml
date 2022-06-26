@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
 
-    tools:context=".HomeFragment">
+    tools:context=".ui.fragment.HomeFragment">
+
+    <include
+        android:id="@+id/main_top_app_bar"
+        layout="@layout/app_bar" />
 
     <LinearLayout
 
@@ -20,30 +24,30 @@
             style="@style/textButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/nunitosans_bold"
             android:gravity="center"
-            app:icon = "@drawable/ic_sort"
-            app:iconGravity = "textStart"
-            app:iconSize = "25dp"
-            android:layout_weight="1"
-            app:iconPadding = "10dp"
+            android:text="Sort"
             android:textSize="20dp"
-            android:text="Sort"/>
+            app:icon="@drawable/ic_sort"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconSize="25dp" />
 
         <Button
-            android:layout_weight="1"
             android:id="@+id/filter"
             style="@style/textButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:fontFamily="@font/nunitosans_bold"
             android:gravity="center"
-            app:icon = "@drawable/ic_filter"
-            app:iconSize = "25dp"
-            app:iconGravity = "textStart"
-            app:iconPadding = "10dp"
+            android:text="Filter"
             android:textSize="20dp"
-            android:text="Filter"/>
+            app:icon="@drawable/ic_filter"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconSize="25dp" />
 
     </LinearLayout>
 
@@ -51,7 +55,6 @@
         android:id="@+id/booksRecyclerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/item_book"
-        />
+        tools:listitem="@layout/item_book" />
 
 </LinearLayout>

@@ -13,9 +13,9 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
-        android:layout_below="@id/mainTopAppBar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainTopAppBar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,9 +43,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/userName"
+                    style="@style/TextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/TextInputStyle"
                     android:hint="Enter First Name">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -57,10 +57,10 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lastName"
+                    style="@style/TextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    style="@style/TextInputStyle"
                     android:hint="Enter Last Name">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -73,9 +73,9 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/emailId"
+                    style="@style/TextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/TextInputStyle"
                     android:layout_marginTop="30dp"
                     android:hint="Enter Email Address">
 
@@ -117,10 +117,10 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/password"
+                    style="@style/TextInputStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    style="@style/TextInputStyle"
                     android:hint="Enter Password">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -133,6 +133,7 @@
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUp"
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -141,7 +142,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:text="SIGN IN"
+                android:text="SIGN UP"
                 android:textFontWeight="900"
                 android:textSize="25dp"
                 app:cornerRadius="100dp" />
@@ -155,19 +156,9 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/nunitosans_bold"
                 android:gravity="center"
-                android:text="Don't Have An Account ? SIGN UP"
+                android:text="Already Have An Account ? Sign In"
                 android:textSize="20dp" />
 
-            <Button
-                android:id="@+id/forgotPassword"
-                style="@style/textButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/nunitosans_bold"
-                android:gravity="center"
-                android:text="Forgot Password ? "
-                android:textSize="20dp" />
         </LinearLayout>
     </ScrollView>
 

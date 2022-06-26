@@ -13,7 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <item name="android:textColor">@color/black</item>
 
-        <item name="colorSurface">#D8E0E2E4</item>
+        <item name="colorSurface">#D8FFFFFF</item>
 
         <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
 

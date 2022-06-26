@@ -7,96 +7,104 @@
     android:orientation="vertical"
     tools:context=".ui.fragment.SignInFragment">
 
-    <include
-        layout="@layout/app_bar"
-        />
+    <include layout="@layout/app_bar" />
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_bold"
+        android:paddingLeft="10dp"
         android:text="SIGN IN"
         android:textSize="40dp" />
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:padding="10dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/userName"
+            style="@style/TextInputStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/TextInputStyle"
-            android:hint="Enter Email Address"
-            >
+            android:hint="Enter Email Address">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailAddress"
+                style="@style/TextInputEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/TextInputEditText"
                 android:fontFamily="@font/nunitosans_bold" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
+
+            style="@style/TextInputStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            style="@style/TextInputStyle"
             android:hint="Enter Password">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:fontFamily="@font/nunitosans_bold" />
+                android:fontFamily="@font/nunitosans_bold"
+                android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="15dp"
+        android:id="@+id/signIn"
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="@font/montserrat_bold"
-        android:textFontWeight="900"
-        app:cornerRadius="100dp"
         android:text="SIGN IN"
-        style="@style/Button"
-        android:textSize="25dp" />
+        android:textFontWeight="900"
+        android:textSize="25dp"
+        app:cornerRadius="100dp" />
 
     <Button
-        android:fontFamily="@font/nunitosans_bold"
+        android:id="@+id/dontHaveAnAccount"
+        style="@style/textButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunitosans_bold"
         android:gravity="center"
-        android:textSize="20dp"
-        style="@style/textButton"
-        android:id="@+id/alreadyHaveAnAccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Don't Have An Account ? SIGN UP" />
+        android:text="Don't Have An Account ? Sign Up"
+        android:textSize="20dp" />
 
     <Button
-        style="@style/textButton"
-        android:fontFamily="@font/nunitosans_bold"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:textSize="20dp"
         android:id="@+id/forgotPassword"
+        style="@style/textButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Forgot Password ? " />
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunitosans_bold"
+        android:gravity="center"
+        android:text="Forgot Password ? "
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
