@@ -16,4 +16,6 @@ class AppModule {
     fun providesBottomSheet(): ModalBottomSheetSort {
         return ModalBottomSheetSort()
     }
+
+
 }
