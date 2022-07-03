@@ -17,10 +17,25 @@
 |   |   |   |
 |---|---|---|
 |![](bookstore-screenshots/dark/1.jpeg)|![](bookstore-screenshots/dark/2.jpeg)|![](bookstore-screenshots/dark/3.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/dark/4.jpeg)|![](bookstore-screenshots/dark/5.jpeg)|![](bookstore-screenshots/dark/6.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/dark/7.jpeg)|![](bookstore-screenshots/dark/8.jpeg)|![](bookstore-screenshots/dark/9.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/dark/10.jpeg)|![](bookstore-screenshots/dark/11.jpeg)|![](bookstore-screenshots/dark/12.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/dark/13.jpeg)|![](bookstore-screenshots/dark/14.jpeg)|![](bookstore-screenshots/dark/15.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/dark/16.jpeg)|![](bookstore-screenshots/dark/17.jpeg)|![](bookstore-screenshots/dark/18.jpeg)
 
 
@@ -30,10 +45,25 @@
 |   |   |   |
 |---|---|---|
 |![](bookstore-screenshots/light/1.jpeg)  | ![](bookstore-screenshots/light/2.jpeg)  | ![](bookstore-screenshots/light/3.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/light/3a.jpeg) | ![](bookstore-screenshots/light/5.jpeg)  | ![](bookstore-screenshots/light/6.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/light/7.jpeg)  | ![](bookstore-screenshots/light/8.jpeg)  | ![](bookstore-screenshots/light/9.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/light/10.jpeg) | ![](bookstore-screenshots/light/11.jpeg) | ![](bookstore-screenshots/light/12.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/light/13.jpeg) | ![](bookstore-screenshots/light/14.jpeg) | ![](bookstore-screenshots/light/15.jpeg)
+
+|   |   |   |
+|---|---|---|
 |![](bookstore-screenshots/light/16.jpeg) | ![](bookstore-screenshots/light/17.jpeg) | ![](bookstore-screenshots/light/18.jpeg)
 
 
