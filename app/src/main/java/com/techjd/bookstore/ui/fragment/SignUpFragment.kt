@@ -9,11 +9,9 @@ import android.view.ViewGroup
 import android.widget.RadioButton
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.techjd.bookstore.MainActivity
+import com.techjd.bookstore.ui.activity.MainActivity
 import com.techjd.bookstore.R
-import com.techjd.bookstore.databinding.FragmentSignInBinding
 import com.techjd.bookstore.databinding.FragmentSignUpBinding
-import com.techjd.bookstore.models.login.request.UserRequestLogin
 import com.techjd.bookstore.models.register.request.UserRequestRegister
 import com.techjd.bookstore.utils.DialogClass
 import com.techjd.bookstore.utils.Status

@@ -1,18 +1,16 @@
 package com.techjd.bookstore.ui.fragment
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.techjd.bookstore.MainActivity
+import com.techjd.bookstore.ui.activity.MainActivity
 import com.techjd.bookstore.R
 import com.techjd.bookstore.databinding.FragmentSignInBinding
 import com.techjd.bookstore.models.login.request.UserRequestLogin
-import com.techjd.bookstore.models.login.response.User
 import com.techjd.bookstore.utils.DialogClass
 import com.techjd.bookstore.utils.Status
 import com.techjd.bookstore.utils.TokenManager

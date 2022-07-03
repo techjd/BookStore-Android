@@ -11,7 +11,6 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.RequestManager
 import com.google.android.material.snackbar.Snackbar
-import com.techjd.bookstore.MainActivity
 import com.techjd.bookstore.databinding.FragmentHomeBinding
 import com.techjd.bookstore.models.books.Data
 import com.techjd.bookstore.ui.fragment.adapter.BooksAdapter
@@ -121,6 +120,14 @@ class HomeFragment : Fragment() {
 
     private fun addToCart(book: com.techjd.bookstore.db.models.Data) {
         buyerViewModel.checkIfItemExists(book._id)
+        buyerViewModel.doesItemExist.observe(viewLifecycleOwner) { exists ->
+            if (exists) {
+                showSnackBar("Item Already In Cart").show()
+            } else {
+                buyerViewModel.insertBook(book)
+                showSnackBar("Item Added To Cart").show()
+            }
+        }
 ////        buyerViewModel.cartCount()
 //        val sellerIdSharedPref = tokenManager.getSellerIdOfCart()
 //        val bookSellerId = book.sellerId._id
@@ -156,14 +163,7 @@ class HomeFragment : Fragment() {
 //        )
 //        tokenManager.saveSellerIdofCart(book.sellerId._id)
 //
-        buyerViewModel.doesItemExist.observe(viewLifecycleOwner) { exists ->
-            if (exists) {
-                showSnackBar("Item Already In Cart").show()
-            } else {
-                buyerViewModel.insertBook(book)
-                showSnackBar("Item Added To Cart").show()
-            }
-        }
+
     }
 
     private fun showSnackBar(message: String): Snackbar {

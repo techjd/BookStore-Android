@@ -6,17 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
 import com.google.android.material.snackbar.Snackbar
-import com.techjd.bookstore.MainActivity
 import com.techjd.bookstore.R
 import com.techjd.bookstore.databinding.FragmentCartBinding
-import com.techjd.bookstore.databinding.FragmentHomeBinding
 import com.techjd.bookstore.db.models.Data
 import com.techjd.bookstore.ui.fragment.adapter.CartAdapter
 import com.techjd.bookstore.utils.TokenManager

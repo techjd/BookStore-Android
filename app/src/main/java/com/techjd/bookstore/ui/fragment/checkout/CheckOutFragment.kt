@@ -13,13 +13,12 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.RequestManager
-import com.techjd.bookstore.MainActivity
+import com.techjd.bookstore.ui.activity.MainActivity
 import com.techjd.bookstore.R
 import com.techjd.bookstore.databinding.FragmentCheckOutBinding
 import com.techjd.bookstore.db.models.Data
 import com.techjd.bookstore.models.orders.request.OrderItem
 import com.techjd.bookstore.models.orders.request.OrdersRequest
-import com.techjd.bookstore.ui.fragment.adapter.CartAdapter
 import com.techjd.bookstore.utils.DialogClass
 import com.techjd.bookstore.utils.Status
 import com.techjd.bookstore.utils.TokenManager

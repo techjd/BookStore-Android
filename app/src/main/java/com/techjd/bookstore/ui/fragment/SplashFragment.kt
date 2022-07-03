@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.techjd.bookstore.MainActivity
+import com.techjd.bookstore.ui.activity.MainActivity
 import com.techjd.bookstore.R
 import com.techjd.bookstore.utils.TokenManager
 import com.techjd.bookstore.viewmodels.StateViewModel

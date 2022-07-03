@@ -1,4 +1,4 @@
-package com.techjd.bookstore
+package com.techjd.bookstore.ui.activity
 
 import android.os.Bundle
 import android.util.Log
@@ -12,6 +12,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.razorpay.Checkout
 import com.razorpay.PaymentData
 import com.razorpay.PaymentResultWithDataListener
+import com.techjd.bookstore.R
 import com.techjd.bookstore.databinding.ActivityMainBinding
 import com.techjd.bookstore.utils.ConnectionLiveData
 import com.techjd.bookstore.utils.TokenManager
@@ -20,7 +21,6 @@ import com.techjd.bookstore.viewmodels.StateViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import org.json.JSONObject
 import javax.inject.Inject
-import kotlin.math.log
 
 
 @AndroidEntryPoint
