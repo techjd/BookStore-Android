@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.PaymentStatusFragment">
+
+    <include
+        android:id="@+id/main_top_app_bar_payment_status"
+        layout="@layout/app_bar_payment_status"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_marginTop="150dp"
+        android:id="@+id/animation"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text=""
+        android:textSize="30dp"
+        android:visibility="visible"
+        tools:text="Payment Status" />
+
+</RelativeLayout>
