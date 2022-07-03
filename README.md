@@ -13,26 +13,28 @@
 
 ## 📸 Screenshots ( In Dark Mode )
 
+
 |   |   |   |
 |---|---|---|
-| <img src="https://user-images.githubusercontent.com/28820868/177027721-f6fac0c5-5e64-4d84-98b4-e5b634a02c8b.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027724-aed2170c-35ca-4d64-8832-dffaa399a17c.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027726-95d9d15b-475f-4fd9-b2d6-1e66e0b66fa7.jpeg" height="450px"></img>
-| <img src="https://user-images.githubusercontent.com/28820868/177027727-c937eab9-ec1d-40a1-9ca6-b13967844628.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027729-b8f1142a-9a4a-4558-a2ec-1d5156318ec6.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027730-700e6f02-2b60-4c28-ac49-322bbb3ab43e.jpeg" height="450px"></img>
-| <img src="https://user-images.githubusercontent.com/28820868/177027732-086b16b9-21aa-47a7-9a56-4f70424462ff.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177030283-a300fadb-8d42-451e-a6a2-f1a9326c8dd4.jpeg" height="450px"></img> |<img src="https://user-images.githubusercontent.com/28820868/177027734-54cd2408-b0de-40e6-8bc1-baa2f2d4c54b.jpeg" height="450px"></img> 
-| <img src="https://user-images.githubusercontent.com/28820868/177027736-fa4ac7cf-fe89-4247-8c21-33443e917f54.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027740-5edb87ca-8b75-4752-93ea-07fc2c953a3c.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027742-1dcd730e-2265-4059-8d7e-50a9807ccf8a.jpeg" height="450px"></img> 
-| <img src="https://user-images.githubusercontent.com/28820868/177027743-76c0383f-099b-497f-800e-9ea0e62db2c1.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027745-d475c6aa-0273-46f6-88fb-964560f88ada.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177027747-1a9fd25c-dde3-4da0-b1e2-bcedffcb446d.jpeg" height="450px"></img> 
-| <img src="https://user-images.githubusercontent.com/28820868/177027748-a0e64de8-7abb-4e7f-b066-a46eda059797.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177031719-1bda5b89-58b5-49b0-a650-20dc35f84d4e.jpeg" height="450px"></img> |
+|![](bookstore-screenshots/dark/1.jpeg)|![](bookstore-screenshots/dark/2.jpeg)|![](bookstore-screenshots/dark/3.jpeg)
+|![](bookstore-screenshots/dark/4.jpeg)|![](bookstore-screenshots/dark/5.jpeg)|![](bookstore-screenshots/dark/6.jpeg)
+|![](bookstore-screenshots/dark/7.jpeg)|![](bookstore-screenshots/dark/8.jpeg)|![](bookstore-screenshots/dark/9.jpeg)
+|![](bookstore-screenshots/dark/10.jpeg)|![](bookstore-screenshots/dark/11.jpeg)|![](bookstore-screenshots/dark/12.jpeg)
+|![](bookstore-screenshots/dark/13.jpeg)|![](bookstore-screenshots/dark/14.jpeg)|![](bookstore-screenshots/dark/15.jpeg)
+|![](bookstore-screenshots/dark/16.jpeg)|![](bookstore-screenshots/dark/17.jpeg)|![](bookstore-screenshots/dark/18.jpeg)
+
 
 
 ## 📸 Screenshots ( In Light Mode )
 
 |   |   |   |
 |---|---|---|
-| <img src="https://user-images.githubusercontent.com/28820868/177032247-7d42d9a0-8345-4f78-8fb8-96f5e0faa19f.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032249-205f3b0f-af57-41ef-8091-c75da6aab202.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032250-ce8a1990-e078-4cdf-9c34-a7fb4e6093f5.jpeg" height="450px"></img>
-| <img src="https://user-images.githubusercontent.com/28820868/177032251-e1224492-c105-4c12-ada0-d75a38905dc9.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032254-7ecf7b40-4291-4b09-9a01-9f268b444bc0.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032255-2b841740-ed1c-4553-9623-e162dee9e27f.jpeg" height="450px"></img>
-| <img src="https://user-images.githubusercontent.com/28820868/177032256-d6c14503-656b-4afe-ac86-c7b2834c1463.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032257-6e68c9c0-79df-4a2b-8f92-5f7f68098c4a.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032258-995ff6c4-88be-41b4-ada4-a481010cdceb.jpeg" height="450px"></img> 
-| <img src="https://user-images.githubusercontent.com/28820868/177032259-c7267fec-1a5f-4b01-82b7-ca9efd0916d3.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032261-72df63ba-2299-40f4-aca2-79e5fdcabc71.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032262-052995bf-0115-4a7f-aea5-8ef639384d1f.jpeg" height="450px"></img> 
-| <img src="https://user-images.githubusercontent.com/28820868/177032264-a705fb93-6cf8-4cb5-ad56-7ecbc1c46d00.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032265-2d6a0f1e-ade0-4e02-8022-d60cae405575.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032266-07198546-e231-4e99-9b29-7722644b3130.jpeg" height="450px"></img> 
-| <img src="https://user-images.githubusercontent.com/28820868/177032267-57ab05cc-84ab-4434-ae8d-e29c7b123227.jpeg" height="450px"></img> | <img src="https://user-images.githubusercontent.com/28820868/177032269-34b97d2c-65c0-47e3-a290-e00953937cae.jpeg" height="450px"></img> |
+|![](bookstore-screenshots/light/1.jpeg)  | ![](bookstore-screenshots/light/2.jpeg)  | ![](bookstore-screenshots/light/3.jpeg)
+|![](bookstore-screenshots/light/3a.jpeg) | ![](bookstore-screenshots/light/5.jpeg)  | ![](bookstore-screenshots/light/6.jpeg)
+|![](bookstore-screenshots/light/7.jpeg)  | ![](bookstore-screenshots/light/8.jpeg)  | ![](bookstore-screenshots/light/9.jpeg)
+|![](bookstore-screenshots/light/10.jpeg) | ![](bookstore-screenshots/light/11.jpeg) | ![](bookstore-screenshots/light/12.jpeg)
+|![](bookstore-screenshots/light/13.jpeg) | ![](bookstore-screenshots/light/14.jpeg) | ![](bookstore-screenshots/light/15.jpeg)
+|![](bookstore-screenshots/light/16.jpeg) | ![](bookstore-screenshots/light/17.jpeg) | ![](bookstore-screenshots/light/18.jpeg)
 
 
 ## Built With 🛠
