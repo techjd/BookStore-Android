@@ -15,7 +15,21 @@ class TokenManager @Inject constructor(@ApplicationContext context: Context) {
         editor.apply()
     }
 
+    fun saveSellerIdofCart(id: String) {
+        val editor = prefs.edit()
+        editor.putString(Constants.SELLER_ID, id)
+        editor.apply()
+    }
+
+    fun getSellerIdOfCart(): String? {
+        return prefs.getString(Constants.SELLER_ID, null)
+    }
+
     fun getToken(): String? {
         return prefs.getString(Constants.USER_TOKEN, null)
+    }
+
+    fun getTokenWithBearer(): String? {
+        return "Bearer ${prefs.getString(Constants.USER_TOKEN, null)}"
     }
 }
