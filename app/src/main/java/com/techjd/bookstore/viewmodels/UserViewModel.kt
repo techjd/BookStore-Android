@@ -33,6 +33,7 @@ class UserViewModel @Inject constructor(
         MutableLiveData()
     val userLoginResponse: LiveData<NetworkResult<UserResponseLogin>> = _userLoginResponse
 
+
     fun signUp(userRequestRegister: UserRequestRegister) = viewModelScope.launch {
         _userRegisterResponse.postValue(NetworkResult.Loading())
         val data = userRepository.signUp(userRequestRegister)

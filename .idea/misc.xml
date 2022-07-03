@@ -13,17 +13,30 @@
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/alert_dialog.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_cart.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_checkout.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_history.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_orders.xml" value="0.16495726495726495" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_payment_status.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_profile.xml" value="0.22083333333333333" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/app_bar_search.xml" value="0.22083333333333333" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/filter_bottom_sheet.xml" value="0.4" />
-        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_cart.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_cart.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_check_out.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_history.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_profile.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_no_internet.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_orders.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_payment_failure.xml" value="0.1828125" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_payment_status.xml" value="0.22083333333333333" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_search.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_sign_in.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_sign_up.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/fragment_splash.xml" value="0.22083333333333333" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/item_book.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/item_layout_cart.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/item_layout_cart_item.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/item_layout_history_and_orders.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.22083333333333333" />
       </map>
     </option>

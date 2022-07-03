@@ -10,13 +10,15 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.RequestManager
+import com.google.android.material.snackbar.Snackbar
 import com.techjd.bookstore.MainActivity
 import com.techjd.bookstore.databinding.FragmentHomeBinding
-import com.techjd.bookstore.models.books.Books
 import com.techjd.bookstore.models.books.Data
 import com.techjd.bookstore.ui.fragment.adapter.BooksAdapter
 import com.techjd.bookstore.utils.BottomSheetOptions
+import com.techjd.bookstore.utils.DialogClass
 import com.techjd.bookstore.utils.Status
+import com.techjd.bookstore.utils.TokenManager
 import com.techjd.bookstore.viewmodels.BuyerViewModel
 import com.techjd.bookstore.viewmodels.ModalBottomSheetViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -39,6 +41,9 @@ class HomeFragment : Fragment() {
     @Inject
     lateinit var bottomSheet: ModalBottomSheetSort
 
+    @Inject
+    lateinit var tokenManager: TokenManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -54,14 +59,17 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        (activity as MainActivity).binding.bottomNavigation.visibility = View.VISIBLE
+
 
         binding.sort.setOnClickListener {
             bottomSheet.show(parentFragmentManager, "BOTTOM SHEET")
         }
 
         booksAdapter = BooksAdapter(
-            glide
+            glide,
+            addToCart = { data ->
+                addToCart(data)
+            }
         )
 
         binding.booksRecyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -101,6 +109,7 @@ class HomeFragment : Fragment() {
                 Status.ERROR -> {
                     enableAllButtons()
                     hideProgressBar()
+                    DialogClass(view).showDialog(result.message!!)
                 }
                 Status.LOADING -> {
                     disableAllButtons()
@@ -108,6 +117,61 @@ class HomeFragment : Fragment() {
                 }
             }
         }
+    }
+
+    private fun addToCart(book: com.techjd.bookstore.db.models.Data) {
+        buyerViewModel.checkIfItemExists(book._id)
+////        buyerViewModel.cartCount()
+//        val sellerIdSharedPref = tokenManager.getSellerIdOfCart()
+//        val bookSellerId = book.sellerId._id
+//        if (sellerIdSharedPref.equals(null)) {
+//            Log.d(TAG, "addToCart: NULL")
+//            tokenManager.saveSellerIdofCart(bookSellerId)
+//            buyerViewModel.checkIfItemExists(book._id)
+//
+//        } else {
+//            if (sellerIdSharedPref.equals(bookSellerId)) {
+//                buyerViewModel.checkIfItemExists(book._id)
+//                Log.d(TAG, "addToCart: Same")
+//            } else {
+//                Log.d(TAG, "addToCart: WTFFFF")
+//                showSnackBar("Can't Add Items From Multiple Sellers").show()
+//            }
+//        }
+//        Log.d(TAG, "$sellerIdSharedPref")
+//        Log.d(TAG, "$bookSellerId")
+        //        if (tokenManager.getSellerIdOfCart() == null) {
+//            tokenManager.saveSellerIdofCart(book.sellerId._id)
+//            buyerViewModel.checkIfItemExists(book._id)
+//        } else {
+//            if (!tokenManager.getSellerIdOfCart().equals(book.sellerId._id)) {
+//                showSnackBar("Can't Add Items From Multiple Sellers")
+//            } else {
+//                buyerViewModel.checkIfItemExists(book._id)
+//            }
+//        }
+//        Log.d(
+//            TAG,
+//            "tokenManeger: ${tokenManager.getSellerIdOfCart()} selletId book ${book.sellerId._id}"
+//        )
+//        tokenManager.saveSellerIdofCart(book.sellerId._id)
+//
+        buyerViewModel.doesItemExist.observe(viewLifecycleOwner) { exists ->
+            if (exists) {
+                showSnackBar("Item Already In Cart").show()
+            } else {
+                buyerViewModel.insertBook(book)
+                showSnackBar("Item Added To Cart").show()
+            }
+        }
+    }
+
+    private fun showSnackBar(message: String): Snackbar {
+        return Snackbar.make(
+            binding.root,
+            message,
+            Snackbar.LENGTH_SHORT
+        )
     }
 
     fun sortFromHighToLow() {

@@ -25,7 +25,7 @@ class ModalBottomSheetSort : BottomSheetDialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FilterBottomSheetBinding.inflate(inflater, container, false)
         return binding.root
     }

@@ -67,10 +67,70 @@
         android:id="@+id/cartFragment"
         android:name="com.techjd.bookstore.ui.fragment.CartFragment"
         android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.techjd.bookstore.ui.fragment.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.techjd.bookstore.ui.fragment.checkout.CheckOutFragment"
+        android:label="fragment_check_out"
+        tools:layout="@layout/fragment_check_out" >
+        <action
+            android:id="@+id/action_checkOutFragment_to_cartFragment"
+            app:destination="@id/cartFragment"
+            app:popUpTo="@id/checkOutFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_checkOutFragment_to_paymentStatusFragment"
+            app:destination="@id/paymentStatusFragment"
+            app:popUpTo="@id/checkOutFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentStatusFragment"
+        android:name="com.techjd.bookstore.ui.fragment.PaymentStatusFragment"
+        android:label="fragment_payment_status"
+        tools:layout="@layout/fragment_payment_status" >
+        <action
+            android:id="@+id/action_paymentStatusFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/paymentStatusFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.techjd.bookstore.ui.fragment.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/ordersFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.techjd.bookstore.ui.fragment.orders.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_ordersFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/ordersFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

@@ -10,13 +10,16 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
 import com.google.android.material.button.MaterialButton
 import com.techjd.bookstore.R
+import com.techjd.bookstore.db.models.CategoryId
+import com.techjd.bookstore.db.models.SellerId
 import com.techjd.bookstore.models.books.Books
 import com.techjd.bookstore.models.books.Data
 import okhttp3.internal.filterList
 import javax.inject.Inject
 
 class BooksAdapter(
-    private val glide: RequestManager
+    private val glide: RequestManager,
+    private val addToCart: (book: com.techjd.bookstore.db.models.Data) -> Unit
 ) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
 
     var books: MutableList<Data> = mutableListOf()
@@ -48,6 +51,33 @@ class BooksAdapter(
             holder.soldBy.text = sellerName
             glide.load(book.imageUrl).into(holder.bookImage)
         }
+
+        holder.addToCart.setOnClickListener {
+            addToCart.invoke(
+                com.techjd.bookstore.db.models.Data(
+                    __v = book.__v,
+                    _id = book._id,
+                    author = book.author,
+                    categoryId = CategoryId(
+                        book.categoryId._id,
+                        book.categoryId.categoryName
+                    ),
+                    createdAt = book.createdAt,
+                    updatedAt = book.updatedAt,
+                    title = book.title,
+                    sellerId = SellerId(
+                        book.sellerId._id,
+                        book.sellerId.email,
+                        book.sellerId.firstName,
+                        book.sellerId.lastName
+                    ),
+                    price = book.price,
+                    imageUrl = book.imageUrl,
+                    description = book.description
+                )
+            )
+        }
+
     }
 
     override fun getItemCount(): Int {

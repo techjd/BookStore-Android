@@ -83,5 +83,15 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="addAndRemove" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">@drawable/edittext_background_light</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
 
 </resources>

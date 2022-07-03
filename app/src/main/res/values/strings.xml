@@ -10,4 +10,6 @@
     <string name="search">Search</string>
     <string name="cart">Cart</string>
     <string name="profile">Profile</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="online">Online Payment</string>
 </resources>
