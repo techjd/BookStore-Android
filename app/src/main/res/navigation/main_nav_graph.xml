@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.techjd.bookstore.ui.fragment.SplashFragment"
+        android:name="com.techjd.bookstore.ui.fragment.onboarding.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.techjd.bookstore.ui.fragment.SignInFragment"
+        android:name="com.techjd.bookstore.ui.fragment.onboarding.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" >
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.techjd.bookstore.ui.fragment.SignUpFragment"
+        android:name="com.techjd.bookstore.ui.fragment.onboarding.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
@@ -55,17 +55,17 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.techjd.bookstore.ui.fragment.HomeFragment"
+        android:name="com.techjd.bookstore.ui.fragment.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.techjd.bookstore.ui.fragment.SearchFragment"
+        android:name="com.techjd.bookstore.ui.fragment.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.techjd.bookstore.ui.fragment.CartFragment"
+        android:name="com.techjd.bookstore.ui.fragment.cart.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" >
         <action
@@ -74,7 +74,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.techjd.bookstore.ui.fragment.ProfileFragment"
+        android:name="com.techjd.bookstore.ui.fragment.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -102,7 +102,7 @@
     </fragment>
     <fragment
         android:id="@+id/paymentStatusFragment"
-        android:name="com.techjd.bookstore.ui.fragment.PaymentStatusFragment"
+        android:name="com.techjd.bookstore.ui.fragment.checkout.PaymentStatusFragment"
         android:label="fragment_payment_status"
         tools:layout="@layout/fragment_payment_status" >
         <action

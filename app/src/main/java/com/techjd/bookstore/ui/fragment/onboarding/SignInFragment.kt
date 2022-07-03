@@ -1,4 +1,4 @@
-package com.techjd.bookstore.ui.fragment
+package com.techjd.bookstore.ui.fragment.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -44,12 +44,16 @@ class SignInFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.signIn.setOnClickListener {
-            userViewModel.signIn(
-                UserRequestLogin(
-                    email = binding.emailAddress.text.toString(),
-                    password = binding.password.text.toString()
+            if (validate()) {
+                userViewModel.signIn(
+                    UserRequestLogin(
+                        email = binding.emailAddress.text.toString(),
+                        password = binding.password.text.toString()
+                    )
                 )
-            )
+            } else {
+                DialogClass(view).showDialog("Please Fill All Fields")
+            }
         }
 
         userViewModel.userLoginResponse.observe(viewLifecycleOwner) { result ->
@@ -76,6 +80,15 @@ class SignInFragment : Fragment() {
         binding.dontHaveAnAccount.setOnClickListener {
             findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
         }
+    }
+
+    private fun validate(): Boolean {
+        if (binding.emailAddress.text.toString().trim() != ""
+            && binding.password.text.toString().trim() != ""
+        ) {
+            return true
+        }
+        return false
     }
 
     private fun disableAllButtons() {

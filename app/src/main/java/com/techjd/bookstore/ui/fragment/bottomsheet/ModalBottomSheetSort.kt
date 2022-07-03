@@ -1,4 +1,4 @@
-package com.techjd.bookstore.ui.fragment
+package com.techjd.bookstore.ui.fragment.bottomsheet
 
 import android.content.Context
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.techjd.bookstore.ui.fragment
+package com.techjd.bookstore.ui.fragment.onboarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

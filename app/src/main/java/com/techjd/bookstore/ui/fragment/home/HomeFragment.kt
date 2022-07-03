@@ -1,4 +1,4 @@
-package com.techjd.bookstore.ui.fragment
+package com.techjd.bookstore.ui.fragment.home
 
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +13,7 @@ import com.bumptech.glide.RequestManager
 import com.google.android.material.snackbar.Snackbar
 import com.techjd.bookstore.databinding.FragmentHomeBinding
 import com.techjd.bookstore.models.books.Data
+import com.techjd.bookstore.ui.fragment.bottomsheet.ModalBottomSheetSort
 import com.techjd.bookstore.ui.fragment.adapter.BooksAdapter
 import com.techjd.bookstore.utils.BottomSheetOptions
 import com.techjd.bookstore.utils.DialogClass
@@ -192,12 +193,10 @@ class HomeFragment : Fragment() {
 
     private fun disableAllButtons() {
         binding.sort.isClickable = false
-//        binding.filter.isClickable = false
     }
 
     private fun enableAllButtons() {
         binding.sort.isClickable = true
-//        binding.filter.isClickable = true
     }
 
     private fun showProgressBar() {

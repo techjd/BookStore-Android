@@ -1,6 +1,6 @@
 package com.techjd.bookstore.di
 
-import com.techjd.bookstore.ui.fragment.ModalBottomSheetSort
+import com.techjd.bookstore.ui.fragment.bottomsheet.ModalBottomSheetSort
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

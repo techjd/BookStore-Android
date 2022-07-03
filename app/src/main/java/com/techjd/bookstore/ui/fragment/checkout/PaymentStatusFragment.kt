@@ -1,4 +1,4 @@
-package com.techjd.bookstore.ui.fragment
+package com.techjd.bookstore.ui.fragment.checkout
 
 import android.os.Bundle
 import android.util.Log

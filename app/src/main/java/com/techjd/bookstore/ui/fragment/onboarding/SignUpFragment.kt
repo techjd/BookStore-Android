@@ -1,4 +1,4 @@
-package com.techjd.bookstore.ui.fragment
+package com.techjd.bookstore.ui.fragment.onboarding
 
 import android.os.Bundle
 import android.util.Log
@@ -55,22 +55,19 @@ class SignUpFragment : Fragment() {
                 }
                 return@with "seller"
             }
-            Log.d("INFO", "onViewCreated: ${UserRequestRegister(
-                email = binding.emailAddress.text.toString(),
-                password = binding.password.text.toString(),
-                firstName = binding.firstName.text.toString(),
-                lastName = binding.lastName.text.toString(),
-                role = role
-            )}")
-            userViewModel.signUp(
-                UserRequestRegister(
-                    email = binding.emailAddress.text.toString(),
-                    password = binding.password.text.toString(),
-                    firstName = binding.firstName.text.toString(),
-                    lastName = binding.lastName.text.toString(),
-                    role = role
+            if (validate()) {
+                userViewModel.signUp(
+                    UserRequestRegister(
+                        email = binding.emailAddress.text.toString().trim(),
+                        password = binding.password.text.toString().trim(),
+                        firstName = binding.firstName.text.toString().trim(),
+                        lastName = binding.lastName.text.toString().trim(),
+                        role = role
+                    )
                 )
-            )
+            } else {
+                DialogClass(view).showDialog("Please Fill All Fields")
+            }
         }
 
         userViewModel.userRegisterResponse.observe(viewLifecycleOwner) { result ->
@@ -95,14 +92,20 @@ class SignUpFragment : Fragment() {
         }
 
 
-//        binding.signUp.setOnClickListener {
-//            findNavController().navigate(R.id.action_signUpFragment_to_homeFragment)
-//            (activity as MainActivity).setStartDestinationAsHomeFragment()
-//        }
-
         binding.alreadyHaveAnAccount.setOnClickListener {
             findNavController().navigate(R.id.action_signUpFragment_to_signInFragment)
         }
+    }
+
+    private fun validate(): Boolean {
+        if (binding.emailAddress.text.toString().trim() != ""
+            && binding.password.text.toString().trim() != ""
+            && binding.firstName.text.toString().trim() != ""
+            && binding.lastName.text.toString().trim() != ""
+        ) {
+            return true
+        }
+        return false
     }
 
     private fun disableAllButtons() {

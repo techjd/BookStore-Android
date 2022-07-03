@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.SearchFragment">
+    tools:context=".ui.fragment.search.SearchFragment">
 
     <include
         android:id="@+id/main_top_app_bar_search"
@@ -11,6 +11,7 @@
         />
 
     <EditText
+        android:id="@+id/search"
         android:layout_below="@id/main_top_app_bar_search"
         style="@style/SearchView"
         android:layout_margin="10dp"
@@ -21,4 +22,20 @@
         tools:visibility="visible"
         android:fontFamily="@font/montserrat_medium"
         />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/search"
+        android:id="@+id/searchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
