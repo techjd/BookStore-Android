@@ -22,14 +22,16 @@ import com.techjd.bookstore.utils.DialogClass
 import com.techjd.bookstore.utils.Status
 import com.techjd.bookstore.viewmodels.BuyerViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.*
 import javax.inject.Inject
+import kotlin.collections.ArrayList
 
 @AndroidEntryPoint
 class SearchFragment : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
     private val binding get() = _binding!!
-
+    private var booksList: ArrayList<Data> = arrayListOf()
     private val buyerViewModel: BuyerViewModel by viewModels()
 
     private lateinit var searchAdapter: SearchAdapter
@@ -54,7 +56,9 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.search.doOnTextChanged { text, start, before, count ->
-            searchAdapter.filter.filter(text.toString())
+            Log.d("SEARCHED WORDS", "onViewCreated: ${text.toString()}")
+//            searchAdapter.filter.filter(text.toString())
+            filter(text.toString())
         }
 
         searchAdapter = SearchAdapter(
@@ -72,6 +76,7 @@ class SearchFragment : Fragment() {
         buyerViewModel.allBooks.observe(viewLifecycleOwner) { result ->
             when (result.status) {
                 Status.SUCCESS -> {
+                    booksList = result?.data?.data as ArrayList<Data>
                     hideProgressBar()
                     enableSearch()
                     with(searchAdapter) {
@@ -112,6 +117,19 @@ class SearchFragment : Fragment() {
                 showSnackBar("Item Added To Cart").show()
             }
         }
+    }
+
+    fun filter(text: String) {
+        val filteredList: ArrayList<Data> = ArrayList()
+        for (item in booksList) {
+            if (item.title.lowercase(Locale.getDefault())
+                    .contains(text.lowercase(Locale.getDefault()))
+            ) {
+                filteredList.add(item)
+            }
+        }
+
+        searchAdapter.filterList(filteredList)
     }
 
     private fun enableSearch() {

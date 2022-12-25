@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity(), PaymentResultWithDataListener {
 
         setStartDestinationAsSplashFragment()
 
-        val badge = binding.bottomNavigation.getOrCreateBadge(R.id.cartFragment)
+//        val badge = binding.bottomNavigation.getOrCreateBadge(R.id.cartFragment)
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             when (destination.id) {
@@ -116,22 +116,22 @@ class MainActivity : AppCompatActivity(), PaymentResultWithDataListener {
             }
         }
 
-        buyerViewModel.totalItemsInCart.observe(this) { count ->
-            if (binding.bottomNavigation.visibility == View.VISIBLE) {
-                if (count != null) {
-                    badge.isVisible = true
-                    badge.number = count
-                } else {
-                    badge.isVisible = false
-                }
-            }
-//            if (count != null) {
-//                badge.isVisible = true
-//                badge.number = count
-//            } else {
-//                badge.isVisible = false
+//        buyerViewModel.totalItemsInCart.observe(this) { count ->
+//            if (binding.bottomNavigation.visibility == View.VISIBLE) {
+//                if (count != null) {
+//                    badge.isVisible = true
+//                    badge.number = count
+//                } else {
+//                    badge.isVisible = false
+//                }
 //            }
-        }
+////            if (count != null) {
+////                badge.isVisible = true
+////                badge.number = count
+////            } else {
+////                badge.isVisible = false
+////            }
+//        }
 
 //        stateViewModel.showBottomNavigation.observe(this) { state ->
 //            binding.bottomNavigation.visibility = View.VISIBLE
@@ -193,6 +193,7 @@ class MainActivity : AppCompatActivity(), PaymentResultWithDataListener {
         bundle.putString("status", "success")
         bundle.putString("mode", "online")
         super.onPostResume()
+        buyerViewModel.deleteAllBooks()
         navController.navigate(R.id.action_checkOutFragment_to_paymentStatusFragment, bundle)
         Log.d(TAG, "onPaymentSuccess: ")
     }

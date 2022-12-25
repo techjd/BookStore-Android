@@ -55,4 +55,6 @@ class BuyerRepository @Inject constructor(
 
     suspend fun checkIfUserIsInsertingBooksWithSameSeller() =
         cartDao.checkIfUserIsInsertingBooksWithSameSeller()
+
+    suspend fun deleteAllBooks() = cartDao.deleteAll()
 }

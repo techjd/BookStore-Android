@@ -2,8 +2,8 @@ package com.techjd.bookstore.utils
 
 object Constants {
 
-    const val DEVELOPMENT_BASE_URL = "http://192.168.2.6:5000/api/"
-    const val PRODUCTION_BASE_URL = "http://localhost:5000/api/"
+    const val DEVELOPMENT_BASE_URL = "http://172.20.10.12:6000/api/" // PORT_NO = 6000
+    const val PRODUCTION_BASE_URL = "" // Replace with Production URL
     const val PREFS_TOKEN_FILE = "PREFS_TOKEN_FILE"
     const val USER_TOKEN = "USER_TOKEN"
     const val REGISTER_ENDPOINT = "auth/register"

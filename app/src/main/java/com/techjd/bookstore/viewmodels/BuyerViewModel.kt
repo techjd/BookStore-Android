@@ -202,6 +202,12 @@ class BuyerViewModel @Inject constructor(
         }
     }
 
+    fun deleteAllBooks() {
+        viewModelScope.launch {
+            buyerRepository.deleteAllBooks()
+        }
+    }
+
     fun checkIfItemExists(id: String) {
         viewModelScope.launch {
             val data = buyerRepository.checkIfBookExists(id)

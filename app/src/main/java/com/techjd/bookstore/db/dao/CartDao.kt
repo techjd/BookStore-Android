@@ -33,4 +33,7 @@ interface CartDao {
 
     @Query("SELECT * FROM CART LIMIT 1")
     suspend fun checkIfUserIsInsertingBooksWithSameSeller(): Data
+
+    @Query("DELETE FROM cart")
+    suspend fun deleteAll(): Int
 }

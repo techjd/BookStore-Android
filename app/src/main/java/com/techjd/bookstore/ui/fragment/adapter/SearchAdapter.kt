@@ -18,7 +18,9 @@ import com.techjd.bookstore.db.models.SellerId
 import com.techjd.bookstore.models.books.Books
 import com.techjd.bookstore.models.books.Data
 import okhttp3.internal.filterList
+import java.util.*
 import javax.inject.Inject
+import kotlin.collections.ArrayList
 
 class SearchAdapter(
     private val glide: RequestManager,
@@ -92,6 +94,13 @@ class SearchAdapter(
         return filter()
     }
 
+
+
+    fun filterList(filteredList: ArrayList<Data>) {
+        books = filteredList
+        notifyDataSetChanged()
+    }
+
     private fun filter() = object : Filter() {
         override fun performFiltering(constraint: CharSequence?): FilterResults {
             val filteredList = mutableListOf<Data>()
@@ -116,7 +125,7 @@ class SearchAdapter(
         override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
             Log.d("RESULTS ", "publishResults: ${results!!.values}")
             books.clear()
-            books.addAll(results!!.values as MutableList<Data>)
+            books.addAll(results.values as MutableList<Data>)
             notifyDataSetChanged()
         }
     }

@@ -38,10 +38,13 @@
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/item_layout_cart_item.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/layout/item_layout_history_and_orders.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/BookStore/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2490740740740741" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.30081716036772216" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.2490740740740741" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

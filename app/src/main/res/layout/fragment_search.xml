@@ -12,16 +12,18 @@
 
     <EditText
         android:id="@+id/search"
-        android:layout_below="@id/main_top_app_bar_search"
         style="@style/SearchView"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@id/main_top_app_bar_search"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_medium"
         android:hint="Type Anything To Search"
         android:padding="10dp"
-        tools:visibility="visible"
-        android:fontFamily="@font/montserrat_medium"
-        />
+        tools:visibility="visible" />
 
     <ProgressBar
         android:id="@+id/progressBar"
